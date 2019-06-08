@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -65,8 +65,9 @@
 <wire x1="0" y1="12.5" x2="0" y2="0" width="0" layer="20"/>
 <text x="22.098" y="5.461" size="1.016" layer="21" rot="R90">ON</text>
 <text x="12.192" y="5.207" size="1.016" layer="21" rot="R90">OFF</text>
-<text x="0.127" y="11.684" size="0.635" layer="21">Cab Light V1</text>
+<text x="0.127" y="11.684" size="0.635" layer="21">Cabinet Lighting v1.1</text>
 <text x="0.127" y="0.254" size="0.635" layer="21">Sean Sylwester</text>
+<text x="3.937" y="9.398" size="1.016" layer="21">+9V</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1228,16 +1229,12 @@ Source:  Data sheet </description>
 <wire x1="-1.905" y1="-2.54" x2="-1.905" y2="-1.905" width="0.254" layer="21"/>
 <wire x1="-1.905" y1="-1.905" x2="-2.54" y2="-1.905" width="0.254" layer="21"/>
 <wire x1="-2.54" y1="-1.905" x2="-2.54" y2="-5.08" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="-5.08" x2="-1.651" y2="-5.08" width="0.254" layer="21"/>
-<wire x1="-1.651" y1="-5.08" x2="1.27" y2="-5.08" width="0.254" layer="21"/>
-<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="21"/>
 <wire x1="1.27" y1="-5.08" x2="1.27" y2="-13.081" width="0.254" layer="51"/>
 <wire x1="1.27" y1="-13.081" x2="1.016" y2="-13.589" width="0.254" layer="51"/>
-<wire x1="1.016" y1="-13.589" x2="-0.0508" y2="-13.589" width="0.254" layer="51"/>
+<wire x1="1.016" y1="-13.589" x2="-1.016" y2="-13.589" width="0.254" layer="51"/>
 <wire x1="-1.27" y1="-5.08" x2="-1.27" y2="-13.081" width="0.254" layer="51"/>
 <wire x1="-1.27" y1="-13.081" x2="-1.016" y2="-13.589" width="0.254" layer="51"/>
-<wire x1="-1.016" y1="-13.589" x2="-0.0508" y2="-13.589" width="0.254" layer="51"/>
-<wire x1="-0.0508" y1="-13.589" x2="0.0508" y2="-13.589" width="0.254" layer="51"/>
 <wire x1="-1.651" y1="-5.08" x2="-1.651" y2="-11.303" width="0.254" layer="51"/>
 <wire x1="-1.651" y1="-11.303" x2="-1.3208" y2="-11.6586" width="0.254" layer="51"/>
 <wire x1="1.651" y1="-5.08" x2="1.651" y2="-11.303" width="0.254" layer="51"/>
@@ -1248,8 +1245,6 @@ Source:  Data sheet </description>
 <text x="0.7859" y="-3.4021" size="1.27" layer="21" ratio="14" rot="R270">1</text>
 <text x="-1.7033" y="-3.2751" size="1.27" layer="21" ratio="14" rot="R270">2</text>
 <text x="3.4021" y="-2.4399" size="0.8128" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-2.5146" x2="1.524" y2="-0.2794" layer="51"/>
 <rectangle x1="-1.524" y1="-2.5146" x2="-1.016" y2="-0.2794" layer="51"/>
 </package>
@@ -1264,7 +1259,7 @@ Source:  Data sheet </description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1293,7 +1288,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="8mil"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
@@ -1458,8 +1453,8 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1079484" x="-16.764" y="31.496" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="17.526" y="2.921" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="D1" library="my_lib" package="LUXEON2835C" value="LUXEON2835C" x="13.716" y="10.414" smashed="yes"/>
-<element name="D2" library="my_lib" package="LUXEON2835C" value="LUXEON2835C" x="19.558" y="10.414" smashed="yes"/>
+<element name="D1" library="my_lib" package="LUXEON2835C" value="LUXEON2835C" x="13.716" y="10.414" smashed="yes" rot="R180"/>
+<element name="D2" library="my_lib" package="LUXEON2835C" value="LUXEON2835C" x="19.558" y="10.414" smashed="yes" rot="R180"/>
 <element name="S2" library="my_lib" package="CL-SB-12B-01T" value="CL-SB-12B-01T" x="16.637" y="6.604" smashed="yes">
 <attribute name="VALUE" x="13.422" y="2.274" size="1.27" layer="27"/>
 </element>
@@ -1468,37 +1463,43 @@ design rules under a new name.</description>
 </element>
 </elements>
 <signals>
-<signal name="N$1">
+<signal name="GND">
 <contactref element="S1" pad="2"/>
 <contactref element="J1" pad="1"/>
 <wire x1="2.076" y1="2.286" x2="5.207" y2="5.417" width="0.508" layer="1"/>
 <wire x1="5.207" y1="5.417" x2="5.207" y2="5.842" width="0.508" layer="1"/>
+<polygon width="0.127" layer="16" spacing="0.254" orphans="yes" thermals="no">
+<vertex x="0" y="12.4968"/>
+<vertex x="22.5044" y="12.4968"/>
+<vertex x="22.5044" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
 </signal>
 <signal name="N$3">
-<contactref element="D2" pad="+"/>
+<contactref element="D2" pad="-"/>
 <contactref element="S2" pad="P$3"/>
 <wire x1="18.317" y1="5.89155" x2="18.317" y2="7.31645" width="0.508" layer="1"/>
 <wire x1="19.137" y1="4.504" x2="19.137" y2="5.07155" width="0.508" layer="1"/>
 <wire x1="19.137" y1="5.07155" x2="18.317" y2="5.89155" width="0.508" layer="1"/>
-<wire x1="20.823" y1="9.82245" x2="20.823" y2="10.414" width="0.508" layer="1"/>
+<wire x1="20.823" y1="9.82245" x2="20.293" y2="10.414" width="0.508" layer="1"/>
 <wire x1="18.317" y1="7.31645" x2="20.823" y2="9.82245" width="0.508" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R1" pad="2"/>
-<contactref element="D1" pad="-"/>
-<wire x1="12.981" y1="10.414" x2="9.02" y2="10.414" width="0.508" layer="1"/>
+<contactref element="D1" pad="+"/>
+<wire x1="12.451" y1="10.414" x2="9.02" y2="10.414" width="0.508" layer="1"/>
 <wire x1="9.02" y1="10.414" x2="9.017" y2="10.417" width="0.254" layer="1"/>
 </signal>
-<signal name="N$6">
+<signal name="VCC">
 <contactref element="R1" pad="1"/>
 <contactref element="J1" pad="2"/>
 <wire x1="5.207" y1="8.382" x2="8.252" y2="8.382" width="0.508" layer="1"/>
 <wire x1="8.252" y1="8.382" x2="9.017" y2="7.617" width="0.508" layer="1"/>
 </signal>
 <signal name="N$4">
-<contactref element="D1" pad="+"/>
-<contactref element="D2" pad="-"/>
-<wire x1="14.981" y1="10.414" x2="18.823" y2="10.414" width="0.508" layer="1"/>
+<contactref element="D1" pad="-"/>
+<contactref element="D2" pad="+"/>
+<wire x1="14.451" y1="10.414" x2="18.293" y2="10.414" width="0.508" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="S2" pad="P$2"/>
@@ -1515,6 +1516,19 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="4,1,e0ced583f5c3c08e"/>
+<approved hash="4,1,f665317b665b10e6"/>
+<approved hash="4,1,d3031a72a108027c"/>
+<approved hash="4,1,ddb207460076d290"/>
+<approved hash="4,1,0768ecc837a60d4f"/>
+<approved hash="4,1,e7c6e2dbc29bc786"/>
+<approved hash="4,1,56e1a18dc8c5ce47"/>
+<approved hash="4,16,e7c6e2dbc29bc786"/>
+<approved hash="4,16,e0ced583f5c3c08e"/>
+<approved hash="2,20,8a71860273827ff1"/>
+<approved hash="2,20,8b0b89627ce27e8b"/>
+</errors>
 </board>
 </drawing>
 <compatibility>

@@ -43,8 +43,15 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -56,475 +63,85 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Mittellin" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="Stiffner" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tBridges" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="tBPL" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="bBPL" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="MPL" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="121" name="sName" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="switch-reed" urn="urn:adsk.eagle:library:379">
-<description>&lt;b&gt;Reed switsches&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="MK15" urn="urn:adsk.eagle:footprint:27505/1" library_version="1">
-<description>&lt;b&gt;Reed Sensors for SMD Mounting&lt;/b&gt;&lt;p&gt;
-MEDER electronic&lt;br&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/34737.pdf"&gt; Data sheet &lt;/a&gt;</description>
-<wire x1="7.9" y1="1.15" x2="7.9" y2="-1.15" width="0.2032" layer="21"/>
-<wire x1="7.9" y1="-1.15" x2="-7.9" y2="-1.15" width="0.2032" layer="21"/>
-<wire x1="-7.9" y1="-1.15" x2="-7.9" y2="1.15" width="0.2032" layer="21"/>
-<wire x1="-7.9" y1="1.15" x2="7.9" y2="1.15" width="0.2032" layer="21"/>
-<smd name="1" x="-9.1" y="0" dx="2" dy="1.3" layer="1"/>
-<smd name="2" x="9.1" y="0" dx="2" dy="1.3" layer="1"/>
-<text x="-6.985" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-6.35" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-9.75" y1="-0.35" x2="-7.9" y2="0.35" layer="51"/>
-<rectangle x1="7.9" y1="-0.35" x2="9.75" y2="0.35" layer="51" rot="R180"/>
-</package>
-<package name="CT10-G4" urn="urn:adsk.eagle:footprint:27506/1" library_version="1">
-<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
-COTO TECHNOLOGY / www.cotorelay.com&lt;br&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/91368.pdf"&gt; Data sheet &lt;/a&gt;</description>
-<wire x1="6.3" y1="1.1" x2="6.3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="6.3" y1="-1.1" x2="-6.3" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-6.3" y1="-1.1" x2="-6.3" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="-6.3" y1="1.1" x2="6.3" y2="1.1" width="0.2032" layer="21"/>
-<smd name="1" x="-9.145" y="0" dx="2" dy="1.3" layer="1"/>
-<smd name="2" x="9.145" y="0" dx="2" dy="1.3" layer="1"/>
-<text x="-6.1802" y="1.3302" size="1.27" layer="25">&gt;NAME</text>
-<text x="-6.1802" y="-3.1082" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-9.7" y1="-0.375" x2="-6.4" y2="0.375" layer="51"/>
-<rectangle x1="6.4" y1="-0.375" x2="9.7" y2="0.375" layer="51" rot="R180"/>
-</package>
-<package name="CT10-G1" urn="urn:adsk.eagle:footprint:27507/1" library_version="1">
-<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
-COTO TECHNOLOGY / www.cotorelay.com&lt;br&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/91368.pdf"&gt; Data sheet &lt;/a&gt;</description>
-<wire x1="5.7" y1="1.1" x2="5.7" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="5.7" y1="-1.1" x2="-5.7" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-5.7" y1="-1.1" x2="-5.7" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="-5.7" y1="1.1" x2="5.7" y2="1.1" width="0.2032" layer="21"/>
-<smd name="1" x="-7.62" y="0" dx="2" dy="1.3" layer="1"/>
-<smd name="2" x="7.62" y="0" dx="2" dy="1.3" layer="1"/>
-<text x="-5.5802" y="1.3302" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.5802" y="-3.1082" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-8.175" y1="-0.375" x2="-5.7" y2="0.375" layer="51"/>
-<rectangle x1="5.7" y1="-0.375" x2="8.175" y2="0.375" layer="51" rot="R180"/>
-</package>
-<package name="CT10-A2" urn="urn:adsk.eagle:footprint:27508/1" library_version="1">
-<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
-COTO TECHNOLOGY / www.cotorelay.com&lt;br&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/91368.pdf"&gt; Data sheet &lt;/a&gt;</description>
-<wire x1="5.7" y1="1.1" x2="5.7" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="5.7" y1="-1.1" x2="-5.7" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-5.7" y1="-1.1" x2="-5.7" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="-5.7" y1="1.1" x2="5.7" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="-6.25" y1="1.5" x2="6.25" y2="1.5" width="0" layer="20"/>
-<wire x1="6.25" y1="1.5" x2="6.25" y2="-1.5" width="0" layer="20"/>
-<wire x1="6.25" y1="-1.5" x2="-6.25" y2="-1.5" width="0" layer="20"/>
-<wire x1="-6.25" y1="-1.5" x2="-6.25" y2="1.5" width="0" layer="20"/>
-<smd name="1" x="-7.5" y="0" dx="2" dy="1.3" layer="1"/>
-<smd name="2" x="7.5" y="0" dx="2" dy="1.3" layer="1"/>
-<text x="-5.5" y="1.75" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.5" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-7.86" y1="-0.505" x2="-5.7" y2="0.505" layer="51"/>
-<rectangle x1="5.7" y1="-0.505" x2="7.86" y2="0.505" layer="51" rot="R180"/>
-</package>
-<package name="MK6-10" urn="urn:adsk.eagle:footprint:27509/1" library_version="1">
-<description>&lt;b&gt;Reed Sonsor for PCB Mountung&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/91181.pdf"&gt; Data sheet &lt;/a&gt;</description>
-<wire x1="-14.2" y1="1.8" x2="14.2" y2="1.8" width="0.2032" layer="21"/>
-<wire x1="14.2" y1="1.8" x2="14.2" y2="0.2" width="0.2032" layer="21"/>
-<wire x1="14.2" y1="0.2" x2="12.2" y2="-1.8" width="0.2032" layer="21" curve="-90"/>
-<wire x1="12.2" y1="-1.8" x2="-12.2" y2="-1.8" width="0.2032" layer="21"/>
-<wire x1="-12.2" y1="-1.8" x2="-14.2" y2="0.2" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-14.2" y1="0.2" x2="-14.2" y2="1.8" width="0.2032" layer="21"/>
-<pad name="1" x="-12.7" y="0" drill="0.6" diameter="1.016"/>
-<pad name="2" x="12.7" y="0" drill="0.6" diameter="1.016"/>
-<text x="-10.16" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-10.16" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="MK6-8-A" urn="urn:adsk.eagle:footprint:27510/1" library_version="1">
-<description>&lt;b&gt;Reed Sonsor for PCB Mountung&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/91181.pdf"&gt; Data sheet &lt;/a&gt;</description>
-<wire x1="-9.505" y1="1.55" x2="9.505" y2="1.55" width="0.2032" layer="21"/>
-<wire x1="9.505" y1="1.55" x2="9.505" y2="-1.55" width="0.2032" layer="21" curve="-180"/>
-<wire x1="9.505" y1="-1.55" x2="-9.505" y2="-1.55" width="0.2032" layer="21"/>
-<wire x1="-9.505" y1="-1.55" x2="-9.505" y2="1.55" width="0.2032" layer="21" curve="-180"/>
-<pad name="1" x="-10.16" y="0" drill="0.6" diameter="1.016"/>
-<pad name="2" x="10.16" y="0" drill="0.6" diameter="1.016"/>
-<text x="-10.16" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-10.16" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="MK6-7" urn="urn:adsk.eagle:footprint:27511/1" library_version="1">
-<description>&lt;b&gt;Reed Sonsor for PCB Mountung&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/91181.pdf"&gt; Data sheet &lt;/a&gt;</description>
-<wire x1="-8.235" y1="1.55" x2="8.235" y2="1.55" width="0.2032" layer="21"/>
-<wire x1="8.235" y1="1.55" x2="8.235" y2="-1.55" width="0.2032" layer="21" curve="-180"/>
-<wire x1="8.235" y1="-1.55" x2="-8.235" y2="-1.55" width="0.2032" layer="21"/>
-<wire x1="-8.235" y1="-1.55" x2="-8.235" y2="1.55" width="0.2032" layer="21" curve="-180"/>
-<pad name="1" x="-8.89" y="0" drill="0.6" diameter="1.016"/>
-<pad name="2" x="8.89" y="0" drill="0.6" diameter="1.016"/>
-<text x="-8.89" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-8.89" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="MK6-6" urn="urn:adsk.eagle:footprint:27512/1" library_version="1">
-<description>&lt;b&gt;Reed Sonsor for PCB Mountung&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/91181.pdf"&gt; Data sheet &lt;/a&gt;</description>
-<wire x1="-6.965" y1="1.55" x2="6.965" y2="1.55" width="0.2032" layer="21"/>
-<wire x1="6.965" y1="1.55" x2="6.965" y2="-1.55" width="0.2032" layer="21" curve="-180"/>
-<wire x1="6.965" y1="-1.55" x2="-6.965" y2="-1.55" width="0.2032" layer="21"/>
-<wire x1="-6.965" y1="-1.55" x2="-6.965" y2="1.55" width="0.2032" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="0" drill="0.6" diameter="1.016"/>
-<pad name="2" x="7.62" y="0" drill="0.6" diameter="1.016"/>
-<text x="-7.62" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-7.62" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="MK6-5" urn="urn:adsk.eagle:footprint:27513/1" library_version="1">
-<description>&lt;b&gt;Reed Sonsor for PCB Mountung&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/91181.pdf"&gt; Data sheet &lt;/a&gt;</description>
-<wire x1="-5.545" y1="1.55" x2="5.495" y2="1.55" width="0.2032" layer="21"/>
-<wire x1="5.495" y1="1.55" x2="5.495" y2="-1.55" width="0.2032" layer="21" curve="-180"/>
-<wire x1="5.495" y1="-1.55" x2="-5.545" y2="-1.55" width="0.2032" layer="21"/>
-<wire x1="-5.545" y1="-1.55" x2="-5.545" y2="1.55" width="0.2032" layer="21" curve="-180"/>
-<pad name="1" x="-6.35" y="0" drill="0.6" diameter="1.016"/>
-<pad name="2" x="6.35" y="0" drill="0.6" diameter="1.016"/>
-<text x="-6.35" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-6.35" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="MK6-4" urn="urn:adsk.eagle:footprint:27514/1" library_version="1">
-<description>&lt;b&gt;Reed Sonsor for PCB Mountung&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.farnell.com/datasheets/91181.pdf"&gt; Data sheet &lt;/a&gt;</description>
-<wire x1="-4.375" y1="1.55" x2="4.375" y2="1.55" width="0.2032" layer="21"/>
-<wire x1="4.375" y1="1.55" x2="4.375" y2="-1.55" width="0.2032" layer="21" curve="-180"/>
-<wire x1="4.375" y1="-1.55" x2="-4.375" y2="-1.55" width="0.2032" layer="21"/>
-<wire x1="-4.375" y1="-1.55" x2="-4.375" y2="1.55" width="0.2032" layer="21" curve="-180"/>
-<pad name="1" x="-5.08" y="0" drill="0.6" diameter="1.016"/>
-<pad name="2" x="5.08" y="0" drill="0.6" diameter="1.016"/>
-<text x="-5.08" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="MK15" urn="urn:adsk.eagle:package:27517/1" type="box" library_version="1">
-<description>Reed Sensors for SMD Mounting
-MEDER electronic
-Source:  Data sheet </description>
-<packageinstances>
-<packageinstance name="MK15"/>
-</packageinstances>
-</package3d>
-<package3d name="CT10-G4" urn="urn:adsk.eagle:package:27519/1" type="box" library_version="1">
-<description>CT10 Series Molded Switch
-COTO TECHNOLOGY / www.cotorelay.com
-Source:  Data sheet </description>
-<packageinstances>
-<packageinstance name="CT10-G4"/>
-</packageinstances>
-</package3d>
-<package3d name="CT10-G1" urn="urn:adsk.eagle:package:27518/1" type="box" library_version="1">
-<description>CT10 Series Molded Switch
-COTO TECHNOLOGY / www.cotorelay.com
-Source:  Data sheet </description>
-<packageinstances>
-<packageinstance name="CT10-G1"/>
-</packageinstances>
-</package3d>
-<package3d name="CT10-A2" urn="urn:adsk.eagle:package:27521/1" type="box" library_version="1">
-<description>CT10 Series Molded Switch
-COTO TECHNOLOGY / www.cotorelay.com
-Source:  Data sheet </description>
-<packageinstances>
-<packageinstance name="CT10-A2"/>
-</packageinstances>
-</package3d>
-<package3d name="MK6-10" urn="urn:adsk.eagle:package:27520/1" type="box" library_version="1">
-<description>Reed Sonsor for PCB Mountung
-Source:  Data sheet </description>
-<packageinstances>
-<packageinstance name="MK6-10"/>
-</packageinstances>
-</package3d>
-<package3d name="MK6-8-A" urn="urn:adsk.eagle:package:27522/1" type="box" library_version="1">
-<description>Reed Sonsor for PCB Mountung
-Source:  Data sheet </description>
-<packageinstances>
-<packageinstance name="MK6-8-A"/>
-</packageinstances>
-</package3d>
-<package3d name="MK6-7" urn="urn:adsk.eagle:package:27527/1" type="box" library_version="1">
-<description>Reed Sonsor for PCB Mountung
-Source:  Data sheet </description>
-<packageinstances>
-<packageinstance name="MK6-7"/>
-</packageinstances>
-</package3d>
-<package3d name="MK6-6" urn="urn:adsk.eagle:package:27523/1" type="box" library_version="1">
-<description>Reed Sonsor for PCB Mountung
-Source:  Data sheet </description>
-<packageinstances>
-<packageinstance name="MK6-6"/>
-</packageinstances>
-</package3d>
-<package3d name="MK6-5" urn="urn:adsk.eagle:package:27524/1" type="box" library_version="1">
-<description>Reed Sonsor for PCB Mountung
-Source:  Data sheet </description>
-<packageinstances>
-<packageinstance name="MK6-5"/>
-</packageinstances>
-</package3d>
-<package3d name="MK6-4" urn="urn:adsk.eagle:package:27526/1" type="box" library_version="1">
-<description>Reed Sonsor for PCB Mountung
-Source:  Data sheet </description>
-<packageinstances>
-<packageinstance name="MK6-4"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="REED-SWITCH" urn="urn:adsk.eagle:symbol:27504/1" library_version="1">
-<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0.635" y2="2.667" width="0.1524" layer="94"/>
-<wire x1="0.254" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="3.81" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="180"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="3.81" width="0.254" layer="94"/>
-<wire x1="1.27" y1="3.81" x2="-1.27" y2="3.81" width="0.254" layer="94" curve="180"/>
-<wire x1="-3.556" y1="2.54" x2="-2.794" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-2.794" y1="2.54" x2="-2.794" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.794" y1="0" x2="-3.556" y2="0" width="0.1524" layer="94"/>
-<wire x1="-3.556" y1="0" x2="-3.556" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="1.27" x2="-1.651" y2="1.27" width="0.0508" layer="94"/>
-<wire x1="-1.651" y1="1.27" x2="-1.905" y2="1.524" width="0.0508" layer="94"/>
-<wire x1="-1.651" y1="1.27" x2="-1.905" y2="1.016" width="0.0508" layer="94"/>
-<wire x1="-2.286" y1="1.524" x2="-2.54" y2="1.27" width="0.0508" layer="94"/>
-<wire x1="-2.286" y1="1.016" x2="-2.54" y2="1.27" width="0.0508" layer="94"/>
-<text x="-3.429" y="2.794" size="0.4064" layer="94">N</text>
-<text x="-3.429" y="-0.635" size="0.4064" layer="94">S</text>
-<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-3.556" y1="1.27" x2="-2.794" y2="2.54" layer="94"/>
-<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="REED-SWITCH-" urn="urn:adsk.eagle:component:27529/1" prefix="S" library_version="1">
-<description>&lt;b&gt;Reed Sensor&lt;/b&gt;&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="REED-SWITCH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="MK15-B" package="MK15">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27517/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MEDER" constant="no"/>
-<attribute name="MPN" value="MK15-B-2" constant="no"/>
-<attribute name="OC_FARNELL" value="1079484" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="CT10-G4" package="CT10-G4">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27519/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="CT10-1530-G1" package="CT10-G1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27518/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="COTO TECHNOLOGY" constant="no"/>
-<attribute name="MPN" value="CT10-1530-G1" constant="no"/>
-<attribute name="OC_FARNELL" value="1081696" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="CT10-A2" package="CT10-A2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27521/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="MK15-C2" package="MK15">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27517/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MEDER" constant="no"/>
-<attribute name="MPN" value="MK15-C-2" constant="no"/>
-<attribute name="OC_FARNELL" value="1079485" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="MK6-10" package="MK6-10">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27520/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="MK6-8-B" package="MK6-8-A">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27522/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MEDER" constant="no"/>
-<attribute name="MPN" value="MK6-8-B" constant="no"/>
-<attribute name="OC_FARNELL" value="1079481" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="MK6-7" package="MK6-7">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27527/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="MK6-6" package="MK6-6">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27523/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="MK6-5-B" package="MK6-5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27524/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MEDER" constant="no"/>
-<attribute name="MPN" value="MK6-5-B" constant="no"/>
-<attribute name="OC_FARNELL" value="1079479" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="MK6-4" package="MK6-4">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27526/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="MK6-5-C" package="MK6-5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27524/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MEDER" constant="no"/>
-<attribute name="MPN" value="MK6-5-C" constant="no"/>
-<attribute name="OC_FARNELL" value="1079480" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="MK6-8-H" package="MK6-8-A">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27522/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MEDER" constant="no"/>
-<attribute name="MPN" value="MK6-8-H" constant="no"/>
-<attribute name="OC_FARNELL" value="1079482" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -4991,15 +4608,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-1.905" y1="-1.905" x2="-2.54" y2="-1.905" width="0.254" layer="21"/>
 <wire x1="-2.54" y1="-1.905" x2="-2.54" y2="-5.08" width="0.254" layer="21"/>
 <wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="21"/>
-<wire x1="1.27" y1="-5.08" x2="1.27" y2="-13.081" width="0.254" layer="51"/>
-<wire x1="1.27" y1="-13.081" x2="1.016" y2="-13.589" width="0.254" layer="51"/>
-<wire x1="1.016" y1="-13.589" x2="-1.016" y2="-13.589" width="0.254" layer="51"/>
-<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="-13.081" width="0.254" layer="51"/>
-<wire x1="-1.27" y1="-13.081" x2="-1.016" y2="-13.589" width="0.254" layer="51"/>
-<wire x1="-1.651" y1="-5.08" x2="-1.651" y2="-11.303" width="0.254" layer="51"/>
-<wire x1="-1.651" y1="-11.303" x2="-1.3208" y2="-11.6586" width="0.254" layer="51"/>
-<wire x1="1.651" y1="-5.08" x2="1.651" y2="-11.303" width="0.254" layer="51"/>
-<wire x1="1.651" y1="-11.303" x2="1.3208" y2="-11.6586" width="0.254" layer="51"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="-13.081" width="0.254" layer="48"/>
+<wire x1="1.27" y1="-13.081" x2="1.016" y2="-13.589" width="0.254" layer="48"/>
+<wire x1="1.016" y1="-13.589" x2="-1.016" y2="-13.589" width="0.254" layer="48"/>
+<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="-13.081" width="0.254" layer="48"/>
+<wire x1="-1.27" y1="-13.081" x2="-1.016" y2="-13.589" width="0.254" layer="48"/>
+<wire x1="-1.651" y1="-5.08" x2="-1.651" y2="-11.303" width="0.254" layer="48"/>
+<wire x1="-1.651" y1="-11.303" x2="-1.3208" y2="-11.6586" width="0.254" layer="48"/>
+<wire x1="1.651" y1="-5.08" x2="1.651" y2="-11.303" width="0.254" layer="48"/>
+<wire x1="1.651" y1="-11.303" x2="1.3208" y2="-11.6586" width="0.254" layer="48"/>
 <pad name="1" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
 <pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
 <text x="2.6401" y="2.9479" size="1.016" layer="25" ratio="10" rot="R180">&gt;NAME</text>
@@ -5008,6 +4625,35 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <text x="3.4021" y="-2.4399" size="0.8128" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
 <rectangle x1="1.016" y1="-2.5146" x2="1.524" y2="-0.2794" layer="51"/>
 <rectangle x1="-1.524" y1="-2.5146" x2="-1.016" y2="-0.2794" layer="51"/>
+</package>
+<package name="WE-CAP">
+<smd name="-" x="-1.8" y="0" dx="2.6" dy="1.6" layer="1"/>
+<smd name="+" x="1.8" y="0" dx="2.6" dy="1.6" layer="1"/>
+<wire x1="-2.15" y1="-2.15" x2="-2.15" y2="2.15" width="0.127" layer="21"/>
+<wire x1="-2.15" y1="2.15" x2="2.15" y2="2.15" width="0.127" layer="21"/>
+<wire x1="2.15" y1="2.15" x2="2.15" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="2.15" y1="-2.15" x2="-2.15" y2="-2.15" width="0.127" layer="21"/>
+<circle x="-3" y="-0.7" radius="0.070709375" width="0" layer="21"/>
+<wire x1="-2.15" y1="-2.15" x2="-2.15" y2="2.15" width="0.127" layer="51"/>
+<wire x1="-2.15" y1="2.15" x2="2.15" y2="2.15" width="0.127" layer="51"/>
+<wire x1="2.15" y1="2.15" x2="2.15" y2="-2.15" width="0.127" layer="51"/>
+<wire x1="2.15" y1="-2.15" x2="-2.15" y2="-2.15" width="0.127" layer="51"/>
+<text x="-2.15" y="2.3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.15" y="3.8" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="KSK-1C90U">
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="14" y2="0" width="0.1524" layer="21"/>
+<wire x1="14" y1="0" x2="14" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="14" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="21"/>
+<pad name="COM" x="-3.5" y="1.27" drill="0.6"/>
+<pad name="NO" x="17.5" y="2.27" drill="0.6"/>
+<pad name="NC" x="17.5" y="0.27" drill="0.6"/>
+<text x="14" y="1.77" size="1.27" layer="48">NO</text>
+<text x="14" y="-0.33" size="1.27" layer="48">NC</text>
+<text x="-2.74" y="0.7" size="1.27" layer="48">COM</text>
+<text x="0" y="3.03" size="1.016" layer="25">&gt;NAME</text>
+<text x="0" y="-1.3" size="1.016" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -5056,6 +4702,29 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="CPOL-US">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="KSK-1C90U">
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<pin name="COM" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="NO" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="NC" x="7.62" y="5.08" visible="off" length="short" rot="R180"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5108,6 +4777,121 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="WE-CAP" prefix="C">
+<gates>
+<gate name="G$1" symbol="CPOL-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WE-CAP">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KSK-1C90U">
+<gates>
+<gate name="G$1" symbol="KSK-1C90U" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KSK-1C90U">
+<connects>
+<connect gate="G$1" pin="COM" pad="COM"/>
+<connect gate="G$1" pin="NC" pad="NC"/>
+<connect gate="G$1" pin="NO" pad="NO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SamacSys_Parts">
+<description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOT96P240X120-3N">
+<description>&lt;b&gt;DMP3099L-7-1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.05" y="0.96" dx="1.2" dy="0.65" layer="1"/>
+<smd name="2" x="-1.05" y="-0.96" dx="1.2" dy="0.65" layer="1"/>
+<smd name="3" x="1.05" y="0" dx="1.2" dy="0.65" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.9" y1="1.75" x2="1.9" y2="1.75" width="0.05" layer="51"/>
+<wire x1="1.9" y1="1.75" x2="1.9" y2="-1.75" width="0.05" layer="51"/>
+<wire x1="1.9" y1="-1.75" x2="-1.9" y2="-1.75" width="0.05" layer="51"/>
+<wire x1="-1.9" y1="-1.75" x2="-1.9" y2="1.75" width="0.05" layer="51"/>
+<wire x1="-0.65" y1="1.45" x2="0.65" y2="1.45" width="0.1" layer="51"/>
+<wire x1="0.65" y1="1.45" x2="0.65" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="0.65" y1="-1.45" x2="-0.65" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="-0.65" y1="-1.45" x2="-0.65" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.65" y1="0.49" x2="0.31" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.1" y1="1.45" x2="0.1" y2="1.45" width="0.2" layer="21"/>
+<wire x1="0.1" y1="1.45" x2="0.1" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="0.1" y1="-1.45" x2="-0.1" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="-0.1" y1="-1.45" x2="-0.1" y2="1.45" width="0.2" layer="21"/>
+<wire x1="-1.65" y1="1.535" x2="-0.45" y2="1.535" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DMP3099L-7">
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="5.842" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="5.842" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.842" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="5.842" y1="5.588" x2="5.842" y2="4.572" width="0.254" layer="94"/>
+<wire x1="5.842" y1="-0.508" x2="5.842" y2="0.508" width="0.254" layer="94"/>
+<wire x1="5.842" y1="2.032" x2="5.842" y2="3.048" width="0.254" layer="94"/>
+<circle x="6.35" y="2.54" radius="3.81" width="0.254" layer="94"/>
+<text x="11.43" y="3.81" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="11.43" y="1.27" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="G" x="0" y="0" visible="pad" length="short"/>
+<pin name="D" x="7.62" y="10.16" visible="pad" length="short" rot="R270"/>
+<pin name="S" x="7.62" y="-5.08" visible="pad" length="short" rot="R90"/>
+<polygon width="0.254" layer="94">
+<vertex x="7.62" y="2.54"/>
+<vertex x="6.604" y="3.048"/>
+<vertex x="6.604" y="2.032"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DMP3099L-7" prefix="Q">
+<description>&lt;b&gt;Diodes Inc DMP3099L-7 P-channel MOSFET Transistor, 2.9 A, -30 V, 3-Pin SOT-23&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/DMP3099L-7.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DMP3099L-7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT96P240X120-3N">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Diodes Inc DMP3099L-7 P-channel MOSFET Transistor, 2.9 A, -30 V, 3-Pin SOT-23" constant="no"/>
+<attribute name="HEIGHT" value="1.2mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Diodes Inc." constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="DMP3099L-7" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="621-DMP3099L-7" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=621-DMP3099L-7" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -5120,86 +4904,152 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="S1" library="switch-reed" library_urn="urn:adsk.eagle:library:379" deviceset="REED-SWITCH-" device="MK15-B" package3d_urn="urn:adsk.eagle:package:27517/1"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1210" package3d_urn="urn:adsk.eagle:package:23554/2"/>
 <part name="D1" library="my_lib" deviceset="LUXEON2835C" device=""/>
 <part name="D2" library="my_lib" deviceset="LUXEON2835C" device=""/>
 <part name="S2" library="my_lib" deviceset="CL-SB-12B-01T" device=""/>
 <part name="J1" library="my_lib" deviceset="22-05-3021" device=""/>
+<part name="Q1" library="SamacSys_Parts" deviceset="DMP3099L-7" device=""/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="2.2M"/>
+<part name="C1" library="my_lib" deviceset="WE-CAP" device="">
+<attribute name="C" value="22u"/>
+</part>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="10k"/>
+<part name="U$1" library="my_lib" deviceset="KSK-1C90U" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="S1" gate="G$1" x="45.72" y="50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="48.26" y="48.26" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="45.72" y="48.26" size="1.778" layer="96" rot="R270"/>
+<instance part="R1" gate="G$1" x="76.2" y="66.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="80.01" y="64.9986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.898" y="69.85" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R1" gate="G$1" x="45.72" y="73.66" smashed="yes">
-<attribute name="NAME" x="41.91" y="75.1586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="41.91" y="70.358" size="1.778" layer="96"/>
+<instance part="D1" gate="G$1" x="76.2" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="79.248" y="54.864" size="1.778" layer="95"/>
 </instance>
-<instance part="D1" gate="G$1" x="58.42" y="76.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="62.992" y="79.756" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="62.992" y="81.915" size="1.778" layer="96" rot="R180"/>
+<instance part="D2" gate="G$1" x="76.2" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="79.248" y="42.164" size="1.778" layer="95"/>
 </instance>
-<instance part="D2" gate="G$1" x="63.5" y="68.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="67.056" y="64.008" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="69.215" y="64.008" size="1.778" layer="96" rot="R90"/>
+<instance part="S2" gate="G$1" x="35.56" y="68.58" smashed="yes" rot="R90"/>
+<instance part="J1" gate="G$1" x="33.02" y="45.72" smashed="yes" rot="MR0"/>
+<instance part="Q1" gate="G$1" x="68.58" y="83.82" smashed="yes" rot="MR180">
+<attribute name="NAME" x="80.01" y="80.01" size="1.778" layer="95" rot="MR180" align="center-left"/>
+<attribute name="VALUE" x="80.01" y="82.55" size="1.778" layer="96" rot="MR180" align="center-left"/>
 </instance>
-<instance part="S2" gate="G$1" x="68.58" y="45.72" smashed="yes" rot="MR90"/>
-<instance part="J1" gate="G$1" x="38.1" y="60.96" smashed="yes" rot="MR0"/>
+<instance part="R2" gate="G$1" x="53.34" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="51.8414" y="80.01" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="56.642" y="80.01" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C1" gate="G$1" x="58.42" y="45.72" smashed="yes">
+<attribute name="NAME" x="59.436" y="46.355" size="1.778" layer="95"/>
+<attribute name="C" x="58.42" y="40.64" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="48.26" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.7614" y="41.91" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="51.562" y="41.91" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U$1" gate="G$1" x="58.42" y="60.96" smashed="yes" rot="MR90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="58.42" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="43.18" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="P$1"/>
-<label x="40.64" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<wire x1="63.5" y1="60.96" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
+<label x="35.56" y="40.64" size="1.778" layer="95"/>
+<wire x1="35.56" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="63.5" y1="60.96" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="33.02" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="-"/>
+<wire x1="58.42" y1="40.64" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
+<junction x="58.42" y="33.02"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="40.64" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+<junction x="48.26" y="33.02"/>
+</segment>
+<segment>
 <pinref part="S2" gate="G$1" pin="P$3"/>
-<wire x1="66.04" y1="55.88" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="55.88" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="63.5" y1="71.12" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="76.2" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="35.56" y1="78.74" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<label x="30.48" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="73.66" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="P$2"/>
-<label x="40.64" y="66.04" size="1.778" layer="95"/>
+<label x="35.56" y="50.8" size="1.778" layer="95"/>
+<wire x1="35.56" y1="56.9976" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="P$1"/>
+<wire x1="35.56" y1="55.88" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="68.58" x2="35.56" y2="56.9976" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="76.2" y1="45.72" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
+<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="58.42" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="76.2" y1="71.12" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PWR" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<wire x1="76.2" y1="88.9" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="88.9" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
+<junction x="53.34" y="91.44"/>
 <pinref part="S2" gate="G$1" pin="P$2"/>
-<pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="73.66" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="NC" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="78.74" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<wire x1="53.34" y1="76.2" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="76.2" x2="66.04" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="NC"/>
+<wire x1="63.5" y1="68.58" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
+<junction x="63.5" y="76.2"/>
+</segment>
+</net>
+<net name="COM" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="+"/>
+<wire x1="58.42" y1="48.26" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="COM"/>
+</segment>
+</net>
+<net name="NO" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="NO"/>
+<wire x1="55.88" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="68.58" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
